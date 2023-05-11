@@ -9,7 +9,7 @@ export const Home = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch("http://localhost:8080/api/flight/price", {
+    const res = await fetch("/api/flight/price", {
       method: "POST",
       headers: {
         "content-type": "application/json",
